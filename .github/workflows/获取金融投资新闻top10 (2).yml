@@ -1,12 +1,13 @@
+name: Schedule
+on:
+  schedule:
+    - cron: '30 6 * * *'  # 每天 UTC 时间 6:30（北京时间 14:30）
 app:
   description: ''
   icon: 🤖
   icon_background: '#FFEAD5'
   mode: workflow
   name: 获取金融投资新闻top10
-  on:
-  schedule:
-    - cron: "20 11 * * *"
   use_icon_as_answer_icon: false
 kind: app
 version: 0.1.5
